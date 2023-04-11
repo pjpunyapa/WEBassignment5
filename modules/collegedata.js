@@ -115,10 +115,9 @@ module.exports.addStudent = function (data) {
     } else {
       data.TA = true;
     }
-    dataCollection.students.then(
-      (data) => (data.studentNum = data.length + 1)
-    );
-    dataCollection.students.then((data) => data.push(data));
+    var studentnNum=dataCollection.students.length+1;
+    data.studentNum=studentnNum;
+    dataCollection.students.push(data)
     resolve(true);
   });
 }

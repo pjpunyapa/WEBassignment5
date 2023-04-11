@@ -7,7 +7,7 @@
 *  Name: ___Punyapa Jongrak____ Student ID: ______113241228________ Date: ______23 March 2023__________
 *
 *
-*  Online (Cycliic) Link: _____https://sleepy-ant-sandals.cyclic.app/_______________________________________
+*  Online (Cycliic) Link: _____https://long-panama-hat-worm.cyclic.app/______________________________________
 *
 ********************************************************************************/ 
 
@@ -85,8 +85,8 @@ app.get("/student/add", (req, res) => {
     res.render("addStudent");
 });
   
-app.post("/student/add", (req, res) => {
-  return comData.addStudent(req.body).then((response) => {
+app.post("/students/add", (req, res) => {
+  return cd.addStudent(req.body).then((response) => {
     if (response) {
       res.redirect("/students");
     }
